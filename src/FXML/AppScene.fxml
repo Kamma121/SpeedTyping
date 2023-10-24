@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #040D12;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AppSceneController">
+   <children>
+      <TextField fx:id="input" layoutX="433.0" layoutY="548.0" prefHeight="57.0" prefWidth="346.0">
+         <font>
+            <Font name="Corbel" size="27.0" />
+         </font></TextField>
+      <Text fx:id="currentWord" fill="WHITE" layoutX="433.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="currentWord" textAlignment="CENTER" wrappingWidth="346.0">
+         <font>
+            <Font name="Corbel" size="42.0" />
+         </font>
+      </Text>
+      <Text fx:id="nextWord" fill="#6b6a6a" layoutX="804.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nextWord" textAlignment="CENTER" wrappingWidth="346.0">
+         <font>
+            <Font name="Corbel" size="42.0" />
+         </font>
+      </Text>
+      <Label fx:id="modeLabel" alignment="CENTER" layoutY="61.0" prefHeight="64.0" prefWidth="1200.0" textAlignment="CENTER" textFill="#ff7417">
+         <font>
+            <Font name="Cooper Black" size="64.0" />
+         </font>
+      </Label>
+      <Text fill="#ff7417" layoutX="137.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="164.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#ff7417" layoutX="137.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#ff7417" layoutX="519.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accuracy %">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <Label fx:id="modePerMinuteLabel" alignment="CENTER" layoutX="772.0" layoutY="214.0" prefHeight="64.0" prefWidth="422.0" textAlignment="CENTER" textFill="#ff7417">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Label>
+      <Text fx:id="accuracy" fill="#ff7417" layoutX="518.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="175.9423828124999">
+         <font>
+            <Font name="Cooper Black" size="50.0" />
+         </font>
+      </Text>
+      <Text fx:id="scorePerMinute" fill="#ff7417" layoutX="962.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Cooper Black" size="50.0" />
+         </font>
+      </Text>
+      <Text id="seconds" fx:id="seconds" fill="#ff7417" layoutX="137.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="76.552734375">
+         <font>
+            <Font name="Cooper Black" size="50.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="111.0" fitWidth="127.0" layoutX="137.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="endOfTime" fill="#ff7417" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your time is up!" textAlignment="CENTER" visible="false" wrappingWidth="1200.0">
+         <font>
+            <Font name="Cooper Black" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="playAgain" layoutX="500.0" layoutY="515.0" mnemonicParsing="false" onAction="#playAgainAction" prefHeight="57.0" prefWidth="201.0" style="-fx-background-color: #5C8374; -fx-background-radius: 30;" text="Play again" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Corbel" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backToMainMenu" layoutX="500.0" layoutY="605.0" mnemonicParsing="false" onAction="#backToMainMenuAction" prefHeight="57.0" prefWidth="201.0" style="-fx-background-color: #5C8374; -fx-background-radius: 30;" text="Back to main menu" textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Corbel" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
